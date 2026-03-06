@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Prediction</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script defer src="{{ url_for('static', filename='js/theme.js') }}"></script>
+</head>
+<body>
+<div class="navbar">
+    <div class="nav-left">
+        ❤️ <span>Heart Disease Prediction System</span>
+    </div>
+
+    <div class="nav-right">
+        <button id="themeToggle" class="theme-btn">🌙</button>
+    </div>
+</div>
+
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

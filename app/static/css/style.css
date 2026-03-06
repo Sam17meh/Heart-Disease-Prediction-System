@@ -1,0 +1,164 @@
+:root {
+    --bg-color: #f4f6f9;
+    --card-color: #ffffff;
+    --text-color: #000;
+    --primary: #d90429;
+    --border: #ddd;
+}
+
+.dark {
+    --bg-color: #121212;
+    --card-color: #1e1e1e;
+    --text-color: #ffffff;
+    --primary: #ef233c;
+    --border: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background: var(--primary);
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Left text */
+.nav-left {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Right button */
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+
+/* ===== THEME BUTTON ===== */
+.theme-btn {
+    background: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* ===== CARD / CONTAINER ===== */
+.container {
+    width: 420px;
+    background: var(--card-color);
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== HEADINGS ===== */
+h2 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+/* ===== FORM ELEMENTS ===== */
+label {
+    margin-top: 12px;
+    display: block;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-color);
+}
+
+/* ===== NUMBER INPUT FIX ===== */
+input[type=number] {
+    appearance: auto;
+}
+
+/* ===== BUTTON ===== */
+button {
+    width: 100%;
+    padding: 11px;
+    margin-top: 15px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* ===== LINKS ===== */
+a {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ===== DASHBOARD BUTTONS ===== */
+.dashboard-btn {
+    margin-top: 15px;
+}
+
+/* ===== RESULT BOX ===== */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ===== SUCCESS / DANGER ===== */
+.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.danger {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        margin: 30px auto;
+    }
+}

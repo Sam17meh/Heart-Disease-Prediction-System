@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h2>Dashboard</h2>
+
+    <button onclick="location.href='/predict'">
+        🫀 Start Prediction
+    </button>
+
+    <button onclick="location.href='/logout'" style="margin-top:15px;">
+        🚪 Logout
+    </button>
+</div>
+{% endblock %}
