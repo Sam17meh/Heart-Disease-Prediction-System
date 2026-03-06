@@ -1,7 +1,6 @@
-❤️ Heart Disease Prediction System
+❤️ Heart Disease Prediction System.
 
-A complete **Flask-based Machine Learning web application** that predicts the risk of heart disease based on medical parameters. The project includes **user authentication**, **dashboard**, **prediction history-ready structure**, and a **modern UI with Light/Dark mode**.
-
+A full **Flask-based Machine Learning web application** that forecasts the risk of heart disease using medical factors. The project has **user authentication**, **dashboard**, **prediction history-ready structure**, and a **modern UI with Light/Dark mode**.
 ---
 
 🚀 Features
